@@ -54,15 +54,25 @@ class MyHomePage extends StatefulWidget {
 class Party{
   String name;
   String abbreviation;
-  int number;
+  int electoralNumber;
   int affiliateCount;
+  String creationDate;
   String registerDate;
+  String currentPresident;
 
-  Party({required this.name, required this.abbreviation, required this.number, required this.affiliateCount, required this.registerDate});
+  Party({
+    required this.name,
+    required this.abbreviation,
+    required this.electoralNumber,
+    required this.affiliateCount,
+    required this.creationDate,
+    required this.registerDate,
+    required this.currentPresident
+  });
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Party> parties = [Party(name:"MDB", abbreviation:"—", number:99, affiliateCount:100, registerDate:"01/01/2023")];
+  List<Party> parties = [Party(name:"—", abbreviation:"—", electoralNumber:99, affiliateCount:100, registerDate:"01/01/2023", creationDate: "01/01/2020", currentPresident: "bob")];
 
 
   int _counter = 0;
