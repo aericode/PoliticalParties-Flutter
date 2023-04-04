@@ -57,13 +57,12 @@ class Party{
   int number;
   int affiliateCount;
   String registerDate;
-  String image;
 
-  Party({required this.name, required this.abbreviation, required this.number, required this.affiliateCount, required this.registerDate, required this.image});
+  Party({required this.name, required this.abbreviation, required this.number, required this.affiliateCount, required this.registerDate});
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Party> parties = [Party(name:"xx yy zz", abbreviation:"XYZ", number:99, affiliateCount:100, registerDate:"01/01/2023", image:"imagens")];
+  List<Party> parties = [Party(name:"MDB", abbreviation:"—", number:99, affiliateCount:100, registerDate:"01/01/2023")];
 
 
   int _counter = 0;
@@ -77,6 +76,19 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+  }
+
+  String getPartyLogoPath(party){
+    String fileName;
+    if(party.abbreviation == "—"){
+      fileName = party.name;
+    }else{
+      fileName = party.abbreviation;
+    }
+
+    String fullPath = "assets/logos/$fileName.png";
+
+    return fullPath;
   }
 
   @override
@@ -111,8 +123,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            //Image.asset(getPartyLogoPath(parties[0])),
             Text(
               parties[0].abbreviation
             ),
