@@ -51,7 +51,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class Party{
+class Party {
   String name;
   String abbreviation;
   int electoralNumber;
@@ -60,47 +60,54 @@ class Party{
   String registerDate;
   String currentPresident;
 
-  Party({
-    required this.name,
-    required this.abbreviation,
-    required this.electoralNumber,
-    required this.affiliateCount,
-    required this.creationDate,
-    required this.registerDate,
-    required this.currentPresident
-  });
+  Party(
+      {required this.name,
+      required this.abbreviation,
+      required this.electoralNumber,
+      required this.affiliateCount,
+      required this.creationDate,
+      required this.registerDate,
+      required this.currentPresident});
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Party> parties = [Party(name:"abcdef", abbreviation:"aaaa", electoralNumber:99, affiliateCount:100, registerDate:"01/01/2023", creationDate: "01/01/2020", currentPresident: "bob")];
-
+  List<Party> parties = [
+    Party(
+        name: "abcdef",
+        abbreviation: "—",
+        electoralNumber: 99,
+        affiliateCount: 100,
+        registerDate: "01/01/2023",
+        creationDate: "01/01/2020",
+        currentPresident: "bob")
+  ];
 
   int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
       _counter++;
     });
   }
 
-  String getDisplayName(party){
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
+    });
+  }
+
+  String getDisplayName(party) {
     String displayName;
-    if(party.abbreviation == "—"){
+    if (party.abbreviation == "—") {
       displayName = party.name;
-    }else{
+    } else {
       displayName = party.abbreviation;
     }
 
     return displayName;
   }
 
-
-  String getPartyLogoPath(party){
+  String getPartyLogoPath(party) {
     String fileName = getDisplayName(party);
     String fullPath = "assets/logos/$fileName.png";
 
@@ -122,38 +129,29 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            //Image.asset(getPartyLogoPath(parties[0])),
-            Text(
-              getDisplayName(parties[0])
+        child: Column(children: <Widget>[
+          //Image.asset(getPartyLogoPath(parties[0])),
+          Column(
+            children: [
+              Text(getDisplayName(parties[0])),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ],
+          ),
+          Expanded(
+              child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              children: [
+                ElevatedButton(
+                    onPressed: () {}, child: const Text('Bottom Button!')),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+          )),
+        ]),
       ),
-
-
     );
   }
 }
