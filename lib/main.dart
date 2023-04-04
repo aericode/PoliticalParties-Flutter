@@ -72,7 +72,7 @@ class Party{
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Party> parties = [Party(name:"—", abbreviation:"—", electoralNumber:99, affiliateCount:100, registerDate:"01/01/2023", creationDate: "01/01/2020", currentPresident: "bob")];
+  List<Party> parties = [Party(name:"abcdef", abbreviation:"aaaa", electoralNumber:99, affiliateCount:100, registerDate:"01/01/2023", creationDate: "01/01/2020", currentPresident: "bob")];
 
 
   int _counter = 0;
@@ -88,14 +88,20 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  String getPartyLogoPath(party){
-    String fileName;
+  String getDisplayName(party){
+    String displayName;
     if(party.abbreviation == "—"){
-      fileName = party.name;
+      displayName = party.name;
     }else{
-      fileName = party.abbreviation;
+      displayName = party.abbreviation;
     }
 
+    return displayName;
+  }
+
+
+  String getPartyLogoPath(party){
+    String fileName = getDisplayName(party);
     String fullPath = "assets/logos/$fileName.png";
 
     return fullPath;
@@ -137,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             //Image.asset(getPartyLogoPath(parties[0])),
             Text(
-              parties[0].abbreviation
+              getDisplayName(parties[0])
             ),
             Text(
               '$_counter',
@@ -146,11 +152,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+
+
     );
   }
 }
