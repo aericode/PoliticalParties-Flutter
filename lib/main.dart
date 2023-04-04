@@ -87,12 +87,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
+      _counter = _counter%33;
     });
   }
 
   void _decrementCounter() {
     setState(() {
       _counter--;
+      _counter = _counter%33;
     });
   }
 
@@ -144,9 +146,20 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Align(
             alignment: Alignment.bottomCenter,
             child: Row(
+
               children: [
-                ElevatedButton(
-                    onPressed: () {}, child: const Text('Bottom Button!')),
+                IconButton(
+
+                  icon: const Icon(Icons.arrow_back, size: 44),
+                  onPressed: _decrementCounter,
+                ),
+                const Spacer(),
+                Text(getDisplayName(parties[0])),
+                const Spacer(),
+                IconButton(
+                  icon: const Icon(Icons.arrow_forward, size: 44),
+                  onPressed: _incrementCounter
+                ),
               ],
             ),
           )),
