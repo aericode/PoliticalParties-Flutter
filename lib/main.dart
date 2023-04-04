@@ -55,15 +55,15 @@ class Party{
   String name;
   String abbreviation;
   int number;
+  int affiliateCount;
   String registerDate;
-  String text;
   String image;
 
-  Party({required this.name, required this.abbreviation, required this.number, required this.registerDate, required this.text, required this.image});
+  Party({required this.name, required this.abbreviation, required this.number, required this.affiliateCount, required this.registerDate, required this.image});
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Party> parties = [Party(name:"xx yy zz", abbreviation:"XYZ", number:99, registerDate:"01/01/2023", text:"eles são o xyz", image:"imagens")];
+  List<Party> parties = [Party(name:"xx yy zz", abbreviation:"XYZ", number:99, affiliateCount:100, registerDate:"01/01/2023", image:"imagens")];
 
 
   int _counter = 0;
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              parties[0].text,
+              parties[0].abbreviation
             ),
             Text(
               '$_counter',
