@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:political_parties_brazil/checagem_page.dart';
@@ -21,6 +22,11 @@ class _CadastroPageState extends State<CadastroPage> {
           await _firebaseAuth.createUserWithEmailAndPassword(
               email: _emailController.text, password: _passwordController.text);
 
+      FirebaseFirestore.instance.collection('usuarios').add({
+        'nome': _nameController.text,
+        'email': _emailController.text,
+      });
+
       if (userCredential != null) {
         await userCredential.user!.updateDisplayName(_nameController.text);
         Navigator.pushAndRemoveUntil(
@@ -36,6 +42,9 @@ class _CadastroPageState extends State<CadastroPage> {
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
             content: Text('E-mail já em uso.'),
             backgroundColor: Colors.redAccent));
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Text(e.message!), backgroundColor: Colors.redAccent));
       }
     }
   }

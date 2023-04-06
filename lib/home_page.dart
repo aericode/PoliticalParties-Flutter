@@ -1,7 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:political_parties_brazil/sobre.dart';
 
 import 'checagem_page.dart';
+import 'filiados.dart';
 import 'listaPartidos.dart';
 
 class HomePage extends StatelessWidget {
@@ -30,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _firebaseAuth = FirebaseAuth.instance;
   String nome = '';
   String email = '';
+  String userId = '';
 
   @override
   initState() {
@@ -46,6 +50,19 @@ class _MyHomePageState extends State<MyHomePage> {
         email = usuario.email!;
       });
     }
+
+    await FirebaseFirestore.instance
+        .collection('usuarios')
+        .where('email', isEqualTo: email)
+        .get()
+        .then((QuerySnapshot querySnapshot) {
+      if (querySnapshot.docs.length > 0) {
+        // Extrair o ID do primeiro documento que satisfaça a query
+        setState(() {
+          userId = querySnapshot.docs[0].id;
+        });
+      }
+    });
   }
 
   sair() async {
@@ -104,23 +121,26 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                     ))),
             ListTile(
-              title: const Text('Cadastrar partido'),
+              title: const Text('Consultar filiados'),
               onTap: () {
-                // Adicione o código para navegar para a tela de cadastro de partido aqui
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const FiliadosPartidoPage()));
               },
             ),
             ListTile(
-              title: const Text('Filiar político'),
+              title: const Text('Sobre'),
               onTap: () {
-                // Adicione o código para navegar para a tela de filiação de político aqui
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const SobrePage()));
               },
             ),
           ],
         ),
       ),
-      body: const ListaPartidos(
-        title: "Patidos",
-      ),
+      body: ListaPartidos(
+          title: "Patidos", nome: nome, email: email, userId: userId),
     );
   }
 }

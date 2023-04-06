@@ -3,6 +3,8 @@ application
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\main\AndroidManifest.xml:3:4-33:19
 MERGED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:28:5-73:19
@@ -11,16 +13,20 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\noepe\.grad
 MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\82512fed81373ace969c8942c2846816\transformed\jetified-recaptcha-18.0.1\AndroidManifest.xml:7:5-20
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\noepe\.gradle\caches\transforms-3\8c333470c490fa0e04c254138d58b522\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\noepe\.gradle\caches\transforms-3\8c333470c490fa0e04c254138d58b522\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\noepe\.gradle\caches\transforms-3\41b9893faa80035c8e4a759f0a031fcd\transformed\jetified-firebase-appcheck-interop-16.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\noepe\.gradle\caches\transforms-3\41b9893faa80035c8e4a759f0a031fcd\transformed\jetified-firebase-appcheck-interop-16.1.1\AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\noepe\.gradle\caches\transforms-3\1e91d435961797618e262d6ea0cd3102\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\noepe\.gradle\caches\transforms-3\1e91d435961797618e262d6ea0cd3102\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\noepe\.gradle\caches\transforms-3\c699ca1833d6ec48b8cb9110ed298dda\transformed\jetified-integrity-1.0.1\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\noepe\.gradle\caches\transforms-3\c699ca1833d6ec48b8cb9110ed298dda\transformed\jetified-integrity-1.0.1\AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\noepe\.gradle\caches\transforms-3\02334ee9d093afcbcec94917848728eb\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\noepe\.gradle\caches\transforms-3\02334ee9d093afcbcec94917848728eb\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\noepe\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
@@ -40,17 +46,21 @@ INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutte
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\82512fed81373ace969c8942c2846816\transformed\jetified-recaptcha-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\noepe\.gradle\caches\transforms-3\8c333470c490fa0e04c254138d58b522\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\noepe\.gradle\caches\transforms-3\41b9893faa80035c8e4a759f0a031fcd\transformed\jetified-firebase-appcheck-interop-16.1.1\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\noepe\.gradle\caches\transforms-3\c49135b7ef2acfba898b0c950a87bede\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\noepe\.gradle\caches\transforms-3\1e91d435961797618e262d6ea0cd3102\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\noepe\.gradle\caches\transforms-3\c699ca1833d6ec48b8cb9110ed298dda\transformed\jetified-integrity-1.0.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\0a4962a3ce512577eba7c4d0832b55d7\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\noepe\.gradle\caches\transforms-3\02334ee9d093afcbcec94917848728eb\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\noepe\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\noepe\.gradle\caches\transforms-3\9354257804af8250f2ffb7c22e2892d5\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -71,6 +81,8 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\noepe\.gradle\cache
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\noepe\.gradle\caches\transforms-3\5abdc06e026f2f7b9b89c25dcd7a6d7e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\noepe\.gradle\caches\transforms-3\0ba9c48dd5ff84ca64a6f8c4dc29ae01\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\noepe\.gradle\caches\transforms-3\282676124ae0776b5645a1cee909808d\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\noepe\.gradle\caches\transforms-3\2a59972febe921f9c117dacc496db2bf\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\noepe\.gradle\caches\transforms-3\eb66d1de934e34f34682d1bf4011c284\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\noepe\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\debug\AndroidManifest.xml:1:1-8:12
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\debug\AndroidManifest.xml:1:1-8:12
@@ -95,6 +107,8 @@ INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutte
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\main\AndroidManifest.xml
 MERGED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:21:5-23:64
@@ -105,8 +119,12 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\noepe\.gradle\ca
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\noepe\.gradle\caches\transforms-3\8c333470c490fa0e04c254138d58b522\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\noepe\.gradle\caches\transforms-3\8c333470c490fa0e04c254138d58b522\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\noepe\.gradle\caches\transforms-3\41b9893faa80035c8e4a759f0a031fcd\transformed\jetified-firebase-appcheck-interop-16.1.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\noepe\.gradle\caches\transforms-3\41b9893faa80035c8e4a759f0a031fcd\transformed\jetified-firebase-appcheck-interop-16.1.1\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\noepe\.gradle\caches\transforms-3\c49135b7ef2acfba898b0c950a87bede\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
@@ -115,8 +133,10 @@ MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\noe
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\noepe\.gradle\caches\transforms-3\1e91d435961797618e262d6ea0cd3102\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\noepe\.gradle\caches\transforms-3\c699ca1833d6ec48b8cb9110ed298dda\transformed\jetified-integrity-1.0.1\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\noepe\.gradle\caches\transforms-3\c699ca1833d6ec48b8cb9110ed298dda\transformed\jetified-integrity-1.0.1\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\0a4962a3ce512577eba7c4d0832b55d7\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\0a4962a3ce512577eba7c4d0832b55d7\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\noepe\.gradle\caches\transforms-3\02334ee9d093afcbcec94917848728eb\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\noepe\.gradle\caches\transforms-3\02334ee9d093afcbcec94917848728eb\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\noepe\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
@@ -157,6 +177,10 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\noepe\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\noepe\.gradle\caches\transforms-3\0ba9c48dd5ff84ca64a6f8c4dc29ae01\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\noepe\.gradle\caches\transforms-3\282676124ae0776b5645a1cee909808d\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\noepe\.gradle\caches\transforms-3\282676124ae0776b5645a1cee909808d\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\noepe\.gradle\caches\transforms-3\2a59972febe921f9c117dacc496db2bf\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\noepe\.gradle\caches\transforms-3\2a59972febe921f9c117dacc496db2bf\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\noepe\.gradle\caches\transforms-3\eb66d1de934e34f34682d1bf4011c284\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\noepe\.gradle\caches\transforms-3\eb66d1de934e34f34682d1bf4011c284\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\noepe\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\noepe\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\debug\AndroidManifest.xml
@@ -173,14 +197,20 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\debug\AndroidManifest.xml:7:5-66
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\android\app\src\debug\AndroidManifest.xml:7:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -197,6 +227,12 @@ ADDED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_
 		ADDED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_auth] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:cloud_firestore] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
 ADDED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
@@ -205,6 +241,10 @@ ADDED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_
 		ADDED from [:firebase_core] C:\Users\noepe\Documents\projetos\flutter\political_parties_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\noepe\.gradle\caches\transforms-3\eb66d1de934e34f34682d1bf4011c284\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\noepe\.gradle\caches\transforms-3\eb66d1de934e34f34682d1bf4011c284\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\noepe\.gradle\caches\transforms-3\30e185151e99fafa1824574da49f94cc\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
@@ -273,6 +313,12 @@ ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\t
 		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\noepe\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\noepe\.gradle\caches\transforms-3\440a45ab3501cf4de9bf9e669edfca55\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:20:17-111
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
 	android:authorities
@@ -286,13 +332,13 @@ ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\c
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\noepe\.gradle\caches\transforms-3\ac7b423c18e0e9c28c2a8c784d1125eb\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\noepe\.gradle\caches\transforms-3\ebecc565820f24b7a6d2a6a95a057479\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\noepe\.gradle\caches\transforms-3\082fa8f1e076fd76c98f4d760b4e67b1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\noepe\.gradle\caches\transforms-3\f46b9773282b7a3d38863a46e0e0b5d1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 	android:value

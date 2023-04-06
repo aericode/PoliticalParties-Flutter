@@ -12,10 +12,6 @@
         "source": "com.example.political_parties_brazil.app-main-9:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.political_parties_brazil.app-merged_res-15:/drawable_launch_background.xml.flat",
-        "source": "com.example.political_parties_brazil.app-main-9:/drawable/launch_background.xml"
-    },
-    {
         "merged": "com.example.political_parties_brazil.app-merged_res-15:/drawable-v21_launch_background.xml.flat",
         "source": "com.example.political_parties_brazil.app-main-9:/drawable-v21/launch_background.xml"
     },

@@ -1,11 +1,20 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'info.dart' as info;
 
 class ListaPartidos extends StatefulWidget {
-  const ListaPartidos({super.key, required this.title});
+  const ListaPartidos(
+      {super.key,
+      required this.title,
+      required this.nome,
+      required this.email,
+      required this.userId});
 
   final String title;
+  final String nome;
+  final String email;
+  final String userId;
 
   @override
   State<ListaPartidos> createState() => _ListaPartidosState();
@@ -15,6 +24,13 @@ class _ListaPartidosState extends State<ListaPartidos> {
   int _counter = 0;
 
   static const int PARTY_COUNT = 31;
+
+  String documentoId = '';
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   void _incrementCounter() {
     setState(() {
@@ -48,16 +64,48 @@ class _ListaPartidosState extends State<ListaPartidos> {
     return fullPath;
   }
 
+  filiar() async {
+    await FirebaseFirestore.instance
+        .collection('partidos')
+        .where('numero', isEqualTo: info.info_array[_counter][2])
+        .get()
+        .then((QuerySnapshot querySnapshot) {
+      if (querySnapshot.docs.length > 0) {
+        // Extrair o ID do primeiro documento que satisfaça a query
+        setState(() {
+          documentoId = querySnapshot.docs[0].id;
+        });
+      }
+    });
+
+    FirebaseFirestore.instance
+        .collection('partidos')
+        .doc(documentoId)
+        .update({
+          'afiliados': FieldValue.arrayUnion([widget.userId])
+        })
+        .then((value) => {
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  content: Text('Usuário filiado com sucesso.'),
+                  backgroundColor: Colors.green))
+            })
+        .catchError((err) => {
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text('Error: $err'),
+                  backgroundColor: Colors.redAccent))
+            });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(children: <Widget>[
           Container(
-            margin: const EdgeInsets.fromLTRB(0, 50, 0, 40),
+            margin: const EdgeInsets.fromLTRB(0, 45, 0, 40),
             child: Image.asset(
               getPartyLogoPath((info.info_array[_counter])),
-              height: 200,
+              height: 180,
             ),
           ),
           Column(
@@ -71,9 +119,6 @@ class _ListaPartidosState extends State<ListaPartidos> {
               Text("Número Eleitoral: ${info.info_array[_counter][2]}",
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 18)),
-              Text("Número de Filiados: ${info.info_array[_counter][3]}",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18)),
               Text("Data de criação: ${info.info_array[_counter][4]}",
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 18)),
@@ -84,6 +129,8 @@ class _ListaPartidosState extends State<ListaPartidos> {
               Text("Presidente atual: ${info.info_array[_counter][6]}",
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 18)),
+              ElevatedButton(
+                  onPressed: () => filiar(), child: Text('Filiar-se'))
             ],
           ),
           Expanded(
