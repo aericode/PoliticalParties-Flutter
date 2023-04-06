@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'info.dart' as info;
 
-class MyHomePage extends StatefulWidget {
-
-
-  const MyHomePage({super.key, required this.title});
+class ListaPartidos extends StatefulWidget {
+  const ListaPartidos({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ListaPartidos> createState() => _ListaPartidosState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-
+class _ListaPartidosState extends State<ListaPartidos> {
   int _counter = 0;
 
   static const int PARTY_COUNT = 31;
@@ -22,17 +19,16 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
-      _counter = _counter% PARTY_COUNT;
+      _counter = _counter % PARTY_COUNT;
     });
   }
 
   void _decrementCounter() {
     setState(() {
       _counter--;
-      _counter = _counter% PARTY_COUNT;
+      _counter = _counter % PARTY_COUNT;
     });
   }
-
 
   String getDisplayName(partyEntry) {
     String displayName;
@@ -54,49 +50,62 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Center(
         child: Column(children: <Widget>[
           Container(
-            margin: const EdgeInsets.fromLTRB(0, 60, 0, 50),
+            margin: const EdgeInsets.fromLTRB(0, 50, 0, 40),
             child: Image.asset(
               getPartyLogoPath((info.info_array[_counter])),
-              height: 250,
+              height: 200,
             ),
           ),
           Column(
             children: [
-              Text("${info.info_array[_counter][0]}", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18) ),
-              Text("Sigla: ${info.info_array[_counter][1]}", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18 )  ),
-              Text("Número Eleitoral: ${info.info_array[_counter][2]}", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18) ),
-              Text("Número de Filiados: ${info.info_array[_counter][3]}", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)  ),
-              Text("Data de criação: ${info.info_array[_counter][4]}" , style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18) ),
-              Text("Data de registro definintivo: ${info.info_array[_counter][5]}" , style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18) ),
-              Text("Presidente atual: ${info.info_array[_counter][6]}" , style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18) ),
+              Text("${info.info_array[_counter][0]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text("Sigla: ${info.info_array[_counter][1]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text("Número Eleitoral: ${info.info_array[_counter][2]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text("Número de Filiados: ${info.info_array[_counter][3]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text("Data de criação: ${info.info_array[_counter][4]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text(
+                  "Data de registro definintivo: ${info.info_array[_counter][5]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
+              Text("Presidente atual: ${info.info_array[_counter][6]}",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18)),
             ],
           ),
           Expanded(
               child: Align(
-                alignment: Alignment.bottomCenter,
-                child: Row(
-
-                  children: [
-                    IconButton(
-
-                      icon: const Icon(Icons.arrow_back, size: 44),
-                      onPressed: _decrementCounter,
-                    ),
-                    const Spacer(),
-                    Text(getDisplayName(info.info_array[_counter]), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 32)),
-                    const Spacer(),
-                    IconButton(
-                        icon: const Icon(Icons.arrow_forward, size: 44),
-                        onPressed: _incrementCounter
-                    ),
-                  ],
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.arrow_back, size: 44),
+                  onPressed: _decrementCounter,
                 ),
-              )),
+                const Spacer(),
+                Text(getDisplayName(info.info_array[_counter]),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 32)),
+                const Spacer(),
+                IconButton(
+                    icon: const Icon(Icons.arrow_forward, size: 44),
+                    onPressed: _incrementCounter),
+              ],
+            ),
+          )),
         ]),
       ),
     );
