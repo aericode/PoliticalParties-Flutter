@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             TextFormField(
                 controller: _passwordController,
-                decoration: InputDecoration(label: Text('Password'))),
+                decoration: InputDecoration(label: Text('Senha'))),
             ElevatedButton(
                 child: const Text('Entrar'), onPressed: () => login()),
             ElevatedButton(

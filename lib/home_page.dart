@@ -27,27 +27,46 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final _firebaseAuth = FirebaseAuth.instance;
+  String nome = '';
+  String email = '';
+
+  @override
+  initState() {
+    super.initState();
+    pegarUsuario();
+  }
+
+  pegarUsuario() async {
+    User? usuario = await _firebaseAuth.currentUser;
+    if (usuario != null) {
+      setState(() {
+        print(usuario.displayName);
+        nome = usuario.displayName!;
+        email = usuario.email!;
+      });
+    }
+  }
+
   sair() async {
     await _firebaseAuth.signOut().then((user) => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const ChecagemPage())));
   }
 
-  final _firebaseAuth = FirebaseAuth.instance;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela Inicial'),
+        title: const Text('Partidos'),
         actions: [
           Padding(
-            padding: EdgeInsets.only(right: 20.0),
+            padding: const EdgeInsets.only(right: 20.0),
             child: GestureDetector(
               onTap: () {
                 sair();
               },
-              child: Icon(
+              child: const Icon(
                 Icons.exit_to_app,
                 size: 26.0,
               ),
@@ -59,46 +78,47 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              child: Text(
-                'Opções',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-            ),
+            SizedBox(
+                height: 150.0,
+                child: DrawerHeader(
+                    decoration: const BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          nome,
+                          style: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 24,
+                          ),
+                        ),
+                        Text(
+                          email,
+                          style: const TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                    ))),
             ListTile(
-              title: Text('Cadastrar partido'),
+              title: const Text('Cadastrar partido'),
               onTap: () {
                 // Adicione o código para navegar para a tela de cadastro de partido aqui
               },
             ),
             ListTile(
-              title: Text('Cadastrar político'),
-              onTap: () {
-                // Adicione o código para navegar para a tela de cadastro de político aqui
-              },
-            ),
-            ListTile(
-              title: Text('Filiar político'),
+              title: const Text('Filiar político'),
               onTap: () {
                 // Adicione o código para navegar para a tela de filiação de político aqui
-              },
-            ),
-            ListTile(
-              title: Text('Ver partidos'),
-              onTap: () {
-                // Adicione o código para navegar para a tela de visualização de partidos aqui
               },
             ),
           ],
         ),
       ),
-      body: ListaPartidos(
+      body: const ListaPartidos(
         title: "Patidos",
       ),
     );
