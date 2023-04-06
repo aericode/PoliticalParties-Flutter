@@ -20,7 +20,7 @@ class SobrePage extends StatelessWidget {
             ),
             SizedBox(height: 10),*/
             Text(
-              'Our Company',
+              'Nossa Companhia',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -28,12 +28,12 @@ class SobrePage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              'We are a company that specializes in creating innovative and user-friendly mobile applications. Our team consists of experienced developers who are passionate about creating high-quality products that meet the needs of our users.',
+              'Somos uma companhia que preza pela qualidade dos produtos entregues. Temos um time de alta qualidade que busca oferecer o melhor atendimento ao usuário e que busca continua aprimorando a qualidade de serviço.',
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
             Text(
-              'Contact Us',
+              'Entre em contato conosco',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
