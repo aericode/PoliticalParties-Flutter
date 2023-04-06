@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "382000129033",
+    "project_id": "partidos-app-e50f7",
+    "storage_bucket": "partidos-app-e50f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382000129033:android:0be84b898cedc86a24c4d8",
+        "android_client_info": {
+          "package_name": "com.example.political_parties_brazil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382000129033-mftbgve1dom679sv7cq0v5qlbnm2318a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOuHuthcatIbRx60f3O0hDQshh_E9wnRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382000129033-mftbgve1dom679sv7cq0v5qlbnm2318a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "382000129033-8n6535qft9d8hakuabtn4ogg55mrnnqb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.politicalPartiesBrazil"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
