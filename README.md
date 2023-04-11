@@ -1,4 +1,4 @@
-# political_parties_brazil
+# Political Parties - Flutter Application
 
 Final flutter project for my mobile development course
 
